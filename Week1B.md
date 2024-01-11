@@ -30,6 +30,24 @@ We can simplify the 2D plot to only portray 1 feature within a 1D feature space.
 ```
 # Mathematical Notation
 ```
+Data points are also called "Feature vectors"
+(bold font) x = (x1, x2, ..., xd) d = dimensionality of the vector
+Example: Feature vector for a medical patient: x = (21.4 (age), 6.1 (height), 200 (weight))
+
+Comments:
+1. Feature vectors are often in higher-dimensional spaces than we can visualize, e.g., for this dataset the penguins are represented in a 4-dimensional feature space
+2. Features might not capture all important aspects of a problem, e.g., here we are only measuring certain properties of penguins
+
+If we need to ever get a subset of a feature vector with dimension d, it can be denoted as:
+xi = (xi1, xi2, ..., xid) where i = 1, 2, ..., n
+
+Data Matrix:
+(cap and bold) X = (x11, x12, x13, ..., xnd) for n rows and d columns.
+
+Target would be a column from the data matrix:
+y = (y1
+     y2,   
+     y3)
 ```
 # Linear Regression
 ```
