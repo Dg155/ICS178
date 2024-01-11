@@ -51,7 +51,42 @@ y = (y1
 ```
 # Linear Regression
 ```
+Our first machine learning method!!
+
+Regression:
+- Feature vector x (Real-valued)
+- Target variable y (real-valued)
+- Traning Data: set of pairs (xi,yi) where i=1,2,..,n
+
+Regression in 1-dimension - Set of (xi,yi) pairs
+How can we make predicitions for inputs (xnew) that we didn't see in our data?
+
+In linear regression, we want to find the "line of best fit"
+Equation of a line: f(x|0) = 0zero (bias) + 01x
+Parameters of the model: 0 = (0zero,0one)^T
+
+Example of Linear Regression in 2 Dimensions
+Linear Model = equation of a plane = f(x ; q) = q0 + q1 x1 + q2 x2
+The parameters of the model: 𝜃 = 𝜃! , 𝜃" , 𝜃2
+Linear regression model:
+𝑓 𝒙 𝜃 = 𝜃! + 𝜃" 𝑥" + 𝜃$ 𝑥$ + ⋯ + 𝜃% 𝑥%
+
+Key Idea: Find the linear regression model that minimizes the prediction error on our data
+Loss Function: Mean Squared Error (MSE)
+𝐿(𝜃) = 1/𝑛 * summation from t=1 to n of (𝑦! − 𝑓 𝒙! 𝜃))^2
 ```
 # Learning Linear Models with Gradient Descent
 ```
+How can we find the value of 𝜃 = (𝜃! , 𝜃" , ... , 𝜃d)^T that minimize the loss 𝐿(𝜃)?
+Gradient Descent Intuition
+
+In machine learning will want to do this type of "downhill move" in many dimensions, not just one
+In general, we dont know much about the "shape" of the loss function.
+And gradient descent is a heuristic local search algorithm that uses
+the gradient – widely used in machine learning
+
+What is a Gradient?
+The gradient of a function of multiple variables is a vector of partial derivatives, one for eahc variable.
+
+The graident vector of L(0) points in the steepest uphill direction of the L(0) surface at point 0
 ```
